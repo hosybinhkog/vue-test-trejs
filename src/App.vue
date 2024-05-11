@@ -24,12 +24,15 @@ import ModelChangeColor from "./components/ModelChangeColor.vue";
 
     <TresAmbientLight :intensity="0.3" />
     <TresDirectionalLight
+      // @ts-ignore
       :intensity="0.4"
       :position="[0, 10, 0]"
       :shadow="true"
     />
     <ModelChangeColor />
+    // @ts-ignore
     <TresGridHelper :args="[20, 20]" />
+    // @ts-ignore
     <TresAxesHelper :args="[2, 2]" />
     <Three3DText text="binhbinh" />
     <Leviosa />
